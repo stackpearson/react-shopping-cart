@@ -12,8 +12,10 @@ function App() {
 	const [cart, setCart] = useState([]);
 
 	const addItem = item => {
-		// add the given item to the cart
+		setCart(cart.concat(item))
+		
 	};
+	console.log('cart from app', cart);
 
 	return (
 		<div className="App">
